@@ -1,0 +1,37 @@
+POWERSHELL
+
+- basics:
+  * a few of the most basic commands work like linux -> ls, cd, mv, ...
+  * still set shell variables same  -> $variable = value
+
+- microsoft "equivalent" ideas for linux:
+  * less -> use either "more" or "Out-Host -Paging"
+
+- version info:
+  * Get-Host 
+  * $PSVersionTable
+
+- command line parameters: 
+    special variable $args
+    $args is array of all command line arguments
+    some methods for args -> $args.length, $args.count, etc...
+
+- param statement:
+    param([type]$p1 = , [type]$p2 = , ...)
+
+- To create a blank file: 
+  * New-Item -ItemType file example.txt
+  * echo $null > $file
+  * Add-Content $file $null
+
+- string concatenate: use "-join"
+    $str1 = "aa"
+    $str2 = "bb"
+    $str3 = -join($str1,$str2)
+
+- to source the location of a file:
+    uses "." as an operator to include in the scope
+
+- to run another script from in a script:
+    uses "&" or ".\" or "Invoke-Expression"
+

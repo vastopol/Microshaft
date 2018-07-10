@@ -1,0 +1,35 @@
+<?xml version="1.0" ?>
+<!-- WSF Example with Object Reference
+Notes for this very formal example:
+ CDATA is used to help the XML parser ignore 
+ special characters in the content of the script.  
+ The CDATA open and close must be masked 
+ from VBScript by making them comments.
+-->
+<package>
+ <job id="EnumerateConstantsADO">
+  <reference object="ADODB.Recordset" />
+  <script language="VBScript">
+'  <![CDATA[
+    dim title, str, i
+    ctecArray = Array("adOpenUnspecified","adOpenForwardOnly", _
+                      "adOpenKeyset","adOpenDynamic","adOpenStatic")
+    title = "ADO Recordset Values for Constants"
+    str = title & vbNewLine & vbNewLine
+    str = str & "*CursorTypeEnum Constants*" & vbNewLine
+    For i = 0 to ubound(ctecArray)
+      str = str & Eval(ctecArray(i)) & vbTab & ctecArray(i) & vbNewLine
+    Next
+    str = str & vbNewLine
+    str = str & "*LockTypeEnum Constants*" & vbNewLine
+    ltecArray = Array("adLockUnspecified","adLockReadOnly", _
+                      "adLockPessimistic","adLockOptimistic", _
+                      "adLockBatchOptimistic")
+    For i = 0 to ubound(ltecArray)
+      str = str & Eval(ltecArray(i)) & vbTab & ltecArray(i) & vbNewLine
+    Next
+    MsgBox str, vbInformation, Title
+'  ]]>
+  </script>
+ </job>
+</package>
