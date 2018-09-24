@@ -1,0 +1,92 @@
+Fixing Windows 10
+
+These are some ways to deal with the bigger problems and annoying parts.
+
+
+----------------------------------------
+
+Useful Tools:
+regedit
+services.msc
+appwiz.cpl
+mmc
+
+----------------------------------------
+
+Software to Install:
+notepad++
+explorer++
+classic shell
+Old Calculator for Windows 10
+
+use these to replace the windows 10 builtins
+
+----------------------------------------
+
+Stuff to do:
+disable lockscreen - regedit
+
+uninstall bloatware - manual or script
+disable install bloatware - regedit
+
+manually uninstall/cripple skype for buisness (cant use control panel, have to delete the actual files inside of office folder )
+probable loaction - C:\Program Files (x86)\Microsoft Office\root\Office16
+folders - SkypeSrv
+files   - lync.exe, other stuff with lync in the name, OcPubMgr.exe, and probably other stuff too.
+
+disable telemetry - services (Connected User Experiences and Telemetry, dmwappushsvc)
+add firewall rules to block telemetry - script
+
+manually disable cortana permanently - follow the steps
+file name - SearchUI.exe
+loaction  - C:\Windows\SystemApps\Microsoft.Windows.Cortana_cw5n1h2txyewy\
+take ownership of folder and file
+end running task
+remove SearchUI.exe before it restarts
+
+cripple the update functions by doing these steps
+disable automatic update - services (windows update, windows 10 update facilitation service)
+remove these folders from C drive (C:\) - $GetCurrent, $WINDOWS.~BT, Windows.old, Windows10Upgrade
+remove this folder from Windows folder (C:\Windows) - UpdateAssistant
+remove this file from System32 folder (C:\Windows\System32) - osrss.dll
+
+----------------------------------------
+
+https://explorerplusplus.com/
+
+http://www.classicshell.net/
+
+
+https://www.cnet.com/how-to/how-to-disable-the-windows-10-lock-screen/
+
+
+https://www.tenforums.com/general-support/11548-disabled-windows-search-service-cortana-still-running.html
+
+
+https://github.com/W4RH4WK/Debloat-Windows-10/issues/77
+
+https://github.com/W4RH4WK/Debloat-Windows-10
+
+https://winaero.com/blog/disable-ads-windows-10/
+
+https://www.makeuseof.com/tag/easily-remove-bloatware-windows-10/
+
+
+https://www.wikihow.com/Add-New-Options-to-Right-Click-Menu-in-Windows
+
+https://www.itprotoday.com/management-mobility/add-open-command-window-here-windows-10-context-menu
+
+
+https://winaero.com/blog/stop-windows-10-spying-on-you-using-just-windows-firewall/
+
+https://winaero.com/blog/how-to-disable-telemetry-and-data-collection-in-windows-10/
+
+https://www.askvg.com/truth-behind-disallowing-telemetry-and-data-collection-trick-in-windows-10/
+
+
+https://www.howtogeek.com/262464/how-to-gain-full-permissions-to-edit-protected-registry-keys/
+
+https://winaero.com/blog/how-to-jump-to-the-desired-registry-key-with-one-click/
+
+https://www.laptopmag.com/articles/take-ownership-folder-windows-10-using-file-explorer
+
