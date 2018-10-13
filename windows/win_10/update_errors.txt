@@ -1,0 +1,10 @@
+various hex error codes encoumtered when trying to update windows 10 form 1709 to 1803.
+ever since dual booting with linux windows update does not work properly.
+
+0xc1900101
+
+0x80070643
+
+0x80070020
+
+0x8024a206
