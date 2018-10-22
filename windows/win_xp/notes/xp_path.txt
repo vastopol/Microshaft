@@ -1,0 +1,11 @@
+path environment variable
+
+go to my computer, right click, goto properties, advanced tab, environment variables
+
+default xp path:
+
+%SystemRoot%\system32;%SystemRoot%;%SystemRoot%\System32\Wbem
+
+current path:
+
+C:\Software_Installs\Dev\Python3.4.4\;C:\Software_Installs\Dev\Python3.4.4\Scripts;C:\Software_Installs\Dev\Python2.7.15\;C:\Software_Installs\Dev\Python2.7.15\Scripts;C:\Program Files\Windows Resource Kits\Tools\;%SystemRoot%\system32;%SystemRoot%;%SystemRoot%\System32\Wbem;C:\WINDOWS\system32\WindowsPowerShell\v1.0;C:\Software_Installs\Dev\gnuwin32\bin

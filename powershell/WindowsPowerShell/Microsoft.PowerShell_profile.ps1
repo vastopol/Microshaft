@@ -44,6 +44,20 @@ Function pages()
     $input | Out-Host -Paging
 }
 
+# to kill processes by name
+Function die($string)
+{   
+    #Get-Process -Name $string | Stop-Process -Force
+    #Get-Process | Where-Object {$_.Name -eq $string} | Stop-Process -Force
+    $temp = Get-Process | Where-Object {$_.Name -eq $string}
+	if(!($temp))
+	{
+        echo "Error: process name not found."
+        return
+	}
+    Stop-Process $temp -Force
+}
+
 #----------------------------------------
 
 # ALIASES

@@ -1,0 +1,18 @@
+since i can't get cygwin to work, then alternate solution.
+this is to use multiple programs to simulate what a bash shell would do.
+
+not a fan of mingw-w64
+
+git for windows is a minimal functional environment but not very useful
+
+----------------------------------------
+
+gnuwin32 provides some minimal utilities to use.
+download, install, copy folder, then add the C:\Software_Installs\Dev\gnuwin32\bin folder to PATH environment variable.
+
+see also:
+https://www.gnu.org/software/m68hc11/m68hc11_tools_win.html
+got a zsh.exe file form a link there
+but putting zssh in bin folder doesnt work, zsh cant call the other exes...
+
+install mingw32 to C:\MinGW, then move it to Dev and change PATH

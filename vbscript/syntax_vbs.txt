@@ -1,0 +1,56 @@
+VB Script
+stripped down version of visual basic
+----------------------------------------
+
+* can be used in plain .vbs or in a .wsh file
+
+* run with either cscript or wscript
+
+* comments uses single quote "'"
+
+* variables
+  - someTxt = "text"
+  - int i = 5
+
+* string concatenation
+  - str3 = str1 & str2
+
+* create a special objects
+  - Set wShell = WScript.CreateObject("WScript.Shell")
+  - Set wNet   = WScript.CreateObject("WScript.Network")
+  - etc...
+
+* run command with shell
+Syntax: WshShell.Run(strCommand [,intWindowStyle] [,bWaitOnReturn])
+First make a command string, then use run like a subroutine with no parenthesis, or call like a function and capture return
+  - sCmd = "command string"
+  - wShell.run sCmd
+  - int ret = wShell.run(sCmd, 1, true)
+
+* display text box
+either through Popup or a MsgBox
+Syntax: WshShell.Popup(strText, [nSecondsToWait], [strTitle], [intType])
+  - wShell.Popup "text"
+  - MsgBox "text"
+For long messages, VBScript wraps the text inside the dialog box. 
+For line breaks, use VBScript's Chr function and the carriage return character (ASCII 13) between each line:
+  - WshShell.Popup "First line" & Chr(13) & "Second line"
+
+* functions and subroutines
+there are tricky distinctions/gotchas when dealing with subroutines and functions
+either leaving out the parenthesis or not depending on circumstance
+
+
+-----
+
+' vbs ways to force log off
+
+' full shutdown and restart
+sCmd = "shutdown /r /t 0" 
+wShell.run sCmd
+
+' shutdown through wmi
+Set OpSystems = GetObject("winmgmts:{(Shutdown)}//./root/cimv2").ExecQuery("select * from Win32_OperatingSystem where Primary=true")
+for each OpSys in OpSystems
+    OpSys.Win32Shutdown 0
+next

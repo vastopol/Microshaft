@@ -1,0 +1,8 @@
+* Windows Sysinternals
+	https://docs.microsoft.com/en-us/sysinternals/
+	- RootkitRevealer.zip
+	- SysinternalsSuite.zip
+
+* Group Policy Settings Reference for Windows and Windows Server
+	https://www.microsoft.com/en-us/download/details.aspx?id=25250
+

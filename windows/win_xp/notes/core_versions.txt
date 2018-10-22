@@ -1,0 +1,314 @@
+HELP DOC
+
+========================================
+
+Microsoft Update Catalog
+
+https://www.catalog.update.microsoft.com/home.aspx
+
+Microsoft Download Center
+
+https://www.microsoft.com/en-us/download/search.aspx?q=
+
+write query at end of url because their system sucks
+
+========================================
+
+windows xp service packs
+
+this is the most confusing part. it seems like the microsoft website has no link for service pack 1/1a, and 
+the names and links of the service pack 2 & 3 executables are different than older ones so they might have changed also...
+seems like originals were modified and now some alternate versions are available on their official website 
+
+The latest Windows XP service pack is Service Pack 3 (SP3).
+If you only have Windows XP SP1, or if you have no Windows XP service pack installed at all,
+you must first install Windows XP SP1a before installing Windows XP SP3.
+
+https://www.computing.net/howtos/show/how-to-download-windows-xp-service-pack-3-sp3-after-april-8-2014/916.html
+
+https://groups.google.com/forum/embed/#!topic/microsoft.public.windowsxp.general/c_ctWvxicNA
+
+Might just be best to use the Microsoft update catalog...
+using catalog i found:
+Windows XP Service Pack 1 (Express)
+Windows XP Service Pack 2 (KB811113)
+Service Pack 2 for Windows XP Professional, x64 Edition (KB914961)
+Windows XP Service Pack 3 (KB936929)
+
+KB4012583 is actually a Security Update for Windows XP Service Pack 3
+
+--------------------
+
+service pack 1 (unofficial)
+
+unable to find a proper link on the microsoft website...
+found a redirect link through the wayback machine which has old downloads.microsoft.com stuffs
+
+xpsp1a_en_x86.exe
+
+https://web.archive.org/web/20060209224634/http://download.microsoft.com/download/5/4/f/54f8bcf8-bb4d-4613-8ee7-db69d01735ed/xpsp1a_en_x86.exe 
+
+--------------------
+
+service pack 2 (official)
+
+WindowsServer2003.WindowsXP-KB914961-SP2-x64-ENU.exe
+
+https://www.microsoft.com/en-us/download/confirmation.aspx?id=17791
+
+(unofficial)
+
+WindowsXP-KB835935-SP2-ENU.exe
+
+https://web.archive.org/web/20120420205910/http://download.microsoft.com/download/1/6/5/165b076b-aaa9-443d-84f0-73cf11fdcdf8/WindowsXP-KB835935-SP2-ENU.exe 
+
+--------------------
+
+service pack 3 (official)
+
+WindowsXP-KB4012583-x86-Custom-ENU.exe
+
+https://www.microsoft.com/en-us/download/confirmation.aspx?id=55460
+
+(unofficial)
+
+WindowsXP-KB936929-SP3-x86-ENU.exe 
+
+http://download.windowsupdate.com/msdownload/update/software/svpk/2008/04/windowsxp-kb936929-sp3-x86-enu_c81472f7eeea2eca421e116cd4c03e2300ebfde4.exe 
+
+========================================
+
+Windows Management Framework Core
+
+PowerShell 2.0 and Windows Remote Management (WinRM) 2.0
+
+https://www.microsoft.com/en-us/download/details.aspx?id=16818
+
+========================================
+
+Windows Server 2003 Resource Kit Tools
+
+https://www.microsoft.com/en-us/Download/confirmation.aspx?id=17657
+
+========================================
+
+.NET
+Microsoft .NET Framework 2.0 Service Pack 1 (x86)
+Microsoft .NET Framework 3.5 Service pack 1 (Full Package)
+Microsoft .NET Framework 3.5 Service Pack 1 and .NET Framework 2.0 Service Pack 2 Security Update for Windows 2000, Windows Server 2003, and Windows XP
+Microsoft .NET Framework 4 (Standalone Installer)
+Microsoft .NET Framework 4 (Web Installer)
+Microsoft .NET Framework 4 Client Profile (Standalone Installer)
+Update for Microsoft .NET Framework 4 on Windows XP, Windows Server 2003, Windows Vista, Windows Server 2008, Windows 7, and Windows 2008 R2 - KB2836939
+Update 4.0.3 for Microsoft .NET Framework 4 – Runtime Update (KB2600211)
+
+========================================
+
+visual c++
+
+Microsoft Visual C++ 2005 Redistributable Package (x86)
+Microsoft Visual C++ 2005 SP1 Redistributable Package (x86)
+Microsoft Visual C++ 2008 Redistributable Package (x86)
+Microsoft Visual C++ 2008 SP1 Redistributable Package (x86)
+Microsoft Visual C++ 2010 Redistributable Package (x86)
+Visual C++ Redistributable Packages for Visual Studio 2013
+
+Required Software: Windows Installer 3.0 Windows Installer 3.1 or later is recommended.
+
+========================================
+
+visual studio express
+
+Microsoft® Visual Studio® 2005 Express Editions Service Pack 1
+
+https://www.microsoft.com/en-us/download/details.aspx?id=804
+
+Additional details and known issues regarding this Service Pack can be found in Release Notes Knowledge base article 928957.
+
+Choose the appropriate download for your installed Express Edition:
+Visual Basic 2005 Express Edition SP1 - VS80sp1-KB926747-X86-INTL.exe
+Visual C++ 2005 Express Edition SP1 - VS80sp1-KB926748-X86-INTL.exe
+Visual C# Express Edition SP1 - VS80sp1-KB926749-X86-INTL.exe
+Visual J# Express Edition SP1 - VS80sp1-KB926750-X86-ENU.exe
+Visual Web Dev Express Edition SP1 - VS80sp1-KB926751-X86-INTL.exe
+
+
+========================================
+
+masm 8.0
+
+https://www.microsoft.com/en-us/download/details.aspx?id=12654
+
+Assembly language programs built with MASM can be edited and debugged using Visual C++ 2005 Express Edition. 
+This installation requires the Visual C++ 2005 Express Edition to be installed on the computer.
+
+========================================
+
+Windows Installer 3.0 Redistributable
+
+https://www.microsoft.com/en-us/download/details.aspx?id=16821
+
+========================================
+
+Microsoft Visual Basic 6.0 Common Controls
+
+https://www.microsoft.com/en-us/download/details.aspx?id=10019
+
+========================================
+
+Service Pack 6 for Visual Basic 6.0
+
+https://www.microsoft.com/en-us/download/details.aspx?id=5721
+
+========================================
+
+Service Pack 6 for Visual Basic 6.0, Visual C++ 6.0 with Visual Source Safe 6.0d
+
+https://www.microsoft.com/en-us/download/details.aspx?id=9183
+
+========================================
+
+Service Pack 6 for Visual Basic 6.0: Run-Time Redistribution Pack (vbrun60sp6.exe)
+
+https://www.microsoft.com/en-us/download/details.aspx?id=24417
+
+VB6 Runtime
+
+runtime for visual basic for applications 6
+
+VB6.0-KB290887-X86.exe
+
+========================================
+
+Microsoft Visual Basic Power Packs 3.0
+
+https://www.microsoft.com/en-us/download/details.aspx?id=25169
+
+========================================
+
+Microsoft Visual J# Version 2.0 Redistributable Package
+
+https://www.microsoft.com/en-us/download/details.aspx?id=4712
+
+========================================
+
+Windows Script 5.7 for Windows XP
+
+https://www.microsoft.com/en-us/download/details.aspx?id=8247
+
+========================================
+
+Microsoft® Visual Studio® .NET™ 2003 Service Pack 1
+
+https://www.microsoft.com/en-us/download/details.aspx?id=703
+
+========================================
+
+Code Advisor for Visual Basic 6.0
+
+https://www.microsoft.com/en-us/download/details.aspx?id=1222
+
+========================================
+
+Service Pack 6 for Visual Basic 6.0 (Multi-Part Download)
+
+https://www.microsoft.com/en-us/download/details.aspx?id=3247
+
+========================================
+
+Java Language Conversion Assistant 2.0
+
+https://www.microsoft.com/en-us/download/details.aspx?id=14349
+
+========================================
+
+Microsoft Visual J#® 2.0 Redistributable Package – Second Edition (x86)
+
+https://www.microsoft.com/en-us/download/details.aspx?id=18084
+
+========================================
+
+Introducing Visual Basic 2005 for Developers
+
+https://www.microsoft.com/en-us/download/details.aspx?id=23206
+
+
+========================================
+
+Microsoft .NET Framework Repair Tool
+
+https://www.microsoft.com/en-us/download/details.aspx?id=30135
+
+========================================
+
+Microsoft Visual Basic 6.0 Service Pack 6 Cumulative Update
+
+https://www.microsoft.com/en-us/download/details.aspx?id=7030
+
+========================================
+
+101 Visual Basic and C# Code Samples
+
+https://www.microsoft.com/en-us/download/details.aspx?id=4856
+
+========================================
+
+
+Visual Basic 6.0 Upgrade Samples
+
+https://www.microsoft.com/en-us/download/details.aspx?id=11828
+
+========================================
+
+Introducing Small Basic
+
+https://www.microsoft.com/en-us/download/details.aspx?id=14246
+
+========================================
+
+Kernel Memory Space Analyzer Version 8.1
+
+https://www.microsoft.com/en-us/download/details.aspx?id=15877
+
+Debugger:
+Kernel Memory Space Analyzer Version 8.1 was developed based on Microsoft debugger engine Version 6.5.3.8. 
+Before you use Kanalyze, you must install the full package of the Debugging Tools for Windows Version 6.5.3.8. 
+The package has its own End-User License Agreement and you must accept and follow that. 
+Then you can xcopy the Kanalyze files on to the same folder as the debugger files. 
+
+========================================
+
+Microsoft Visual C++ 2008 Sample Library
+
+https://www.microsoft.com/en-us/download/details.aspx?id=16351
+
+========================================
+
+Microsoft Visual Studio 2010 F# Runtime 2.0
+
+https://www.microsoft.com/en-us/download/details.aspx?id=13450
+
+========================================
+
+Visual C++ .NET 2003 Code Samples
+
+https://www.microsoft.com/en-us/download/details.aspx?id=2898
+
+========================================
+Debug Diagnostic Tool v1.2
+
+https://www.microsoft.com/en-us/download/details.aspx?id=26798
+========================================
+
+User Mode Process Dumper Version 8.1
+
+https://www.microsoft.com/en-us/download/details.aspx?id=4060
+========================================
+
+CLR Managed Debugger (mdbg) Sample 4.0
+
+https://www.microsoft.com/en-us/download/details.aspx?id=2282
+
+
+
+

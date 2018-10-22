@@ -1,0 +1,130 @@
+HELP DOC
+
+versioning
+
+windows xp is no longer supported, so some software needs old versions
+these are the last/ most updated versions that will work with xp
+
+========================================
+
+mingw
+
+mingw (32) vs mingw-w64 are 2 separate softwares made by different people
+
+http://www.mingw.org/
+
+https://mingw-w64.org/doku.php
+
+========================================
+
+gnuwin32
+
+http://gnuwin32.sourceforge.net/
+
+https://sourceforge.net/projects/getgnuwin32/
+
+========================================
+
+Git for Windows
+
+As of Git for Windows v2.10.1, Windows Vista or later are required. 
+The last version of Git for Windows to support Windows XP and Windows Server 2003 is v2.10.0.
+
+Parts of Git are implemented in shell script, and Git for Windows runs those scripts via MSYS2's POSIX emulation layer,
+which in turn is based on the Cygwin POSIX emulation layer. Seeing as Windows XP and Windows Server 2003 are years past their official end of life,
+the Cygwin project ended their Herculean efforts to support those Windows versions.
+
+https://github.com/git-for-windows/git/releases/tag/v2.10.0.windows.1
+
+========================================
+
+Cygwin 
+
+Cygwin version 2.5.2 was the last version supporting Windows XP and Server 2003
+
+https://cygwin.com/ml/cygwin-announce/2015-08/msg00049.html
+
+https://cygwin.com/ml/cygwin/2016-06/msg00328.html
+
+https://cygwin.com/ml/cygwin/2016-11/msg00071.html
+
+https://www.cygwin.com/ml/cygwin/2017-05/msg00200.html
+
+http://www.crouchingtigerhiddenfruitbat.org/Cygwin/timemachine.html
+
+http://ctm.crouchingtigerhiddenfruitbat.org/pub/cygwin/circa/index.html
+
+http://ctm.crouchingtigerhiddenfruitbat.org/pub/cygwin/setup/setup.html
+
+https://stackoverflow.com/questions/39479826/cygwin-2-5-2-mirror-getting-the-last-xp-release
+
+========================================
+
+notepad++
+
+Notepad++ v6.7 - Note that all versions before Windows XP SP2 are not supported any more by Notepad++.
+
+http://notepad-plus-plus.org/download/v6.7.html
+
+
+========================================
+
+code::blocks
+
+http://www.codeblocks.org/
+
+13.12 (installed)
+16.01
+17.12
+
+========================================
+
+python on windows
+
+not sure which versions will run on xp for python2.7 
+
+As specified in PEP 11, a Python release only supports a Windows platform while Microsoft considers the platform under extended support. 
+This means that Python 3.7 supports Windows Vista and newer. If you require Windows XP support then please install Python 3.4.
+after version 3.4.4 then only becomes source code and must be compiled 
+the last windows XP Python build is 3.4.4 : https://www.python.org/downloads/release/python-344/ 3.4.7 (2017-08-09) is available as code source
+According To The Python Official Website, Python 3.5+ cannot be used on Windows XP or earlier.
+
+Try Using The Latest Supported Version 
+
+While CPython 3.5 doesn't work on XP, there is PyPy, an alternative Python implementation that does work.
+However, current version PyPy3.5 v6.0 doesn't yet support asyncio module, probably the most interesting part of 3.5 update.
+
+python 2.7.15
+python 3.4.4
+
+ironpython 2.7.8 would not install
+
+========================================
+
+7-zip
+
+laptop had version 9.2
+
+========================================
+
+masm 11 sdk
+
+http://www.masm32.com/
+
+This version is for NT based systems from WIN2000 upwards. 
+The oldest recommended Windows version is XP SP3 as many of the binaries in the MASM32 SDK require RGB/A support. 
+The SDK will run on Win2000 but some of the graphics will not display properly.
+
+NOTE on the version of MASM supplied in the MASM32 SDK.
+The versions supplied will write code that works correctly on Windows operating systems
+from Win95 OEM up to the current versions of Windows. As the Microsoft binaries date from the middle Win98 era,
+they do not support the later SSE, AVX and AVX2 instruction sets. For the advanced programmer already experienced in using MASM,
+it is advisable to obtain the appropriate SDK or Visual C/Studio version from Microsoft for the operating system version they are using
+so that they can use the later instruction sets in advanced code.
+
+
+========================================
+
+Microsoft Visual Basic 6.0
+
+https://winworldpc.com/product/microsoft-visual-bas/60

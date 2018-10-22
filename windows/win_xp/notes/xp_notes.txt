@@ -1,0 +1,190 @@
+Notes on maintaining Windows XP
+========================================
+
+Specifically: Windows XP Home with Service Pack 3
+
+I started maintaining this computer in July 2018.
+It seems like the last time this computer was actively used was mid 2014.
+When I got the computer it looked like it was reset at some point because all of the old applications are gone.
+There were some new applications that have been installed, and the time clock was reset to invalid value in 1988
+there is most likely a disorganized structure on the C: drive.
+this computer is old and most likely suffering form windows rot.
+if possible it would be good to go through the control panel to uninstall, auto clean,
+then going through the C: drive and its subfolders and manually cleaning out residue
+the idea is to form a normalized base version of xp
+
+steps:
+  - catalog existing installed programs
+  - catalog locations of programs on disk
+  - remove programs with control panel
+  - cycle through disk clean up leftover folders and files
+  - run chkdsk, defrag, etc...
+  - make a new folder on the C: drive specifically for installs
+  - reinstall software (update if possible)  
+  - run any updates
+
+manually clean the registry keys with regedit
+uninstallers are in
+HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall
+  
+Now any time when installing new software:
+If Microsoft stuff, service packs, updates, tools, etc... let it install normally where ever on C: drive
+Else install it specifically to the software install folder "C:\Software Installs"
+catalog each install also, then it makes it easy to track what is happening
+then preferably the important stuff is segregated from the other stuff
+
+eventually merge both the old and new installs lists
+
+========================================
+
+Old & Still installed (check control panel)
+
+certain software programs will be uninstalled when replacement installers are found,
+then they will be migrated to the install folder
+
+drivers:
+Broadcom 802.11 Network Adapter
+Intel(R) Extreme Graphics 2 Driver
+Realtek AC'97 Audio - 5.18
+Texas Instruments PCIxx21/x515 drivers - 1.09.0000
+
+microsoft:
+Microsoft Visual C++ 2008 Redistributable - x86 9.0.30729.6161
+Windows Internet Explorer 8 - 20090308.140743
+
+software:
+Adobe Flash Player 13 ActiveX - 13.0.0.214
+Adobe Reader XI - 11.0.08
+FastStone Image Viewer 5.1
+Google Chrome - 35.0.1916.114
+ImgBurn - 2.5.8.0
+IrfanView - 4.37
+Malwarebytes Anti-Malware - 2.0.2.1012
+Open Office - 4.1.0.9764
+Spybot - Search & Destroy - 2.3.39
+WinRAR - 5.01.0 evaluation copy
+
+there is probably more...
+?? Everest 2.20.405 ?? in C:\Program Files
+
+Uninstalled, don't reinstall:
+avast! Free Antivirus - 9.0.2018
+Evernote - 5.4
+The KMPlayer - 3.9.0.124
+MSN Messenger 6.1.0207
+
+Disabled Windows Features:
+Internet Explorer 8
+
+========================================
+
+New Installs:
+
+find the associated kb tags for the Microsoft products
+store them like "kb# - title"
+
+core:
+Microsoft Office 97
+Microsoft Office 2000 Small Buisness (Disk 1 & 2)
+Windows XP service pack 3
+Windows XP service pack 3 security update
+Microsoft .NET Framework 2.0 Service Pack 1 (x86)
+Windows Server 2003 Resource Kit Tools - 5.2.3790
+Windows Management Framework Core (XP PowerShell)
+Microsoft Visual Basic 6 Runtime
+
+soft:
+Zuma Deluxe
+Atari Arcade Hits 1
+Hoyle Classic Casino & Sierra Utilities (installing Hoyle installs this, it must be installed while Hoyle products are installed)
+7-Zip - 9.2
+CodeBlocks - 13.12
+gnuwin32 - 0.6.3
+HackTheGame - 1.21
+Notepad++ - 6.7
+Python2 - 2.7.15
+Python3 - 3.4.4
+masm32v11r - 11.0.0.0
+
+--------------------
+
+find replacement, uninstall, reinstall:
+adobe flash player 
+adobe reader
+chrome
+open office
+winrar
+
+find and install:
+vlc player
+
+========================================
+
+ERRORS: 
+
+(Hoyle, Atari, Office 97: specifically since these are from previous windows versions)
+
+Hoyle Classic Casino can't play sound
+
+Atari Arcade Hits 1 can't play sound
+
+Microsoft Office 97
+- Microsoft Office 97 Setup was not completed successfully
+  Htmlmarq.ocx was unable to register itself in the system registry
+- Microsoft Access can't find the Visual Basic for Applications dynamic-link library (DLL) Vba332
+  Rerun the Microsoft Access Setup program
+- when try to run Microsoft Office Setup gets a setup initialization error
+- Can't uninstall through control panel, gets setup initialization error because Off97Pro.STF is missing or corrupted
+solution:
+manually delete everything, then remove the registry keys
+
+Python
+the python 2.7 and python 3.4 executable are both default named to "python" so there is name conflict with executables. always python3 called.
+had to change name of executable to "python3.exe" and then make new shortcuts to the python and idle
+by doing this it breaks the old shortcuts, and the uninstall feature in control panel.
+to fix needs to run the installer again and repair the install first before doing something.
+now can call both executables and it will find the correct version
+python  -> python 2.7.15
+python3 -> python 3.4.4
+
+========================================
+
+Locations of the old and new installs:
+
+C:\
+  masm32 -> masm32v11r
+  MinGW -> mingw32
+
+C:\Program Files\
+  Microsoft Office 97
+  Microsoft Office 2000
+  vb6runtime
+  Windows Resource Kits
+
+C:\Software_Installs\Dev
+C:\Software_Installs\Games
+C:\Software_Installs\Main
+
+note:
+
+HackTheGame came as a zip folder, runnable executable inside. Stored in the games folder on Desktop
+
+hoyles siera utility
+C:\Program Files\Sierra On-Line
+
+--------------------
+
+folders to see:
+  * C:\WINDOWS
+  * C:\Program Files
+    - Common Files -> sub directory for data
+	- Messenger
+	- Windows Messaging
+  can't delete
+    - microsoft frontpage -> ?? empty ??
+    - xerox -> ?? empty ??
+
+========================================
+
+
+
